@@ -1,0 +1,6 @@
+var mongoose = require("mongoose");
+var theDatabaseUrl = "mongodb+srv://uthekiller:ImBMvH8yzVvwTOpF@freddy.6ah90.mongodb.net/?retryWrites=true&w=majority&appName=Freddy"
+
+mongoose.connect(theDatabaseUrl,{ useMongoClient:true},(err) =>{
+ console.log("Succes",err);
+})
